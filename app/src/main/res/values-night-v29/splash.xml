@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.AnimatedSplash.MySplash" parent="Theme.SplashScreen.IconBackground">
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="android:windowSplashScreenBackground">@color/kormoTech_blue</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/avd_anim_k_logo_night</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="windowSplashScreenIconBackgroundColor">#0072a1</item>
+        <item name="postSplashScreenTheme">@style/Base.Theme.KormoPack</item>
+    </style>
+</resources>

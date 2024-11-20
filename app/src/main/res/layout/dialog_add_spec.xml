@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_text_spec_num"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:background="@drawable/edit_text_underline"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        android:textColor="@color/kormoTech_blue"
+        android:gravity="center"
+        android:hint="@string/spec_num"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:fontFamily="@font/proxim_nova_semibold"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_text_recipe_num"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:background="@drawable/edit_text_underline"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        android:textColor="@color/kormoTech_blue"
+        android:gravity="center"
+        android:hint="@string/recipe_num"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_spec_num"
+        android:layout_marginTop="12dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:fontFamily="@font/proxim_nova_semibold" />
+
+    <ImageView
+        android:id="@+id/infoIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/help_icon"
+        app:layout_constraintEnd_toEndOf="@id/edit_text_recipe_num"
+        app:layout_constraintTop_toTopOf="@id/edit_text_recipe_num"
+        app:layout_constraintBottom_toBottomOf="@id/edit_text_recipe_num"
+        android:layout_marginEnd="12dp"
+        android:tooltipText="Не набір - вказати 0. Набір - порядковий номер, починаючи з 1."/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_text_feed_name"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:background="@drawable/edit_text_underline"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        android:textColor="@color/kormoTech_blue"
+        android:gravity="center"
+        android:hint="@string/feed_name"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_recipe_num"
+        android:layout_marginTop="12dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:fontFamily="@font/proxim_nova_semibold" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_text_total_weight"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:background="@drawable/edit_text_underline"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        android:textColor="@color/kormoTech_blue"
+        android:gravity="center"
+        android:hint="@string/total_weight"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_feed_name"
+        android:layout_marginTop="12dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:fontFamily="@font/proxim_nova_semibold" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/gul1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_text_pieces_perc"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:background="@drawable/edit_text_underline"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        android:textColor="@color/kormoTech_blue"
+        android:gravity="center"
+        android:hint="@string/pieces_perc"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/gul1"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_total_weight"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="6dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:fontFamily="@font/proxim_nova_semibold" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_text_sauce_perc"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:background="@drawable/edit_text_underline"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        android:textColor="@color/kormoTech_blue"
+        android:gravity="center"
+        android:hint="@string/sauce_perc"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@id/gul1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_total_weight"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="6dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:fontFamily="@font/proxim_nova_semibold" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_text_addition_one_perc"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:background="@drawable/edit_text_underline"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        android:textColor="@color/kormoTech_blue"
+        android:gravity="center"
+        android:hint="@string/addition_one_perc"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/gul1"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_pieces_perc"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="6dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:fontFamily="@font/proxim_nova_semibold" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_text_addition_two_perc"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:background="@drawable/edit_text_underline"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        android:textColor="@color/kormoTech_blue"
+        android:gravity="center"
+        android:hint="@string/addition_two_perc"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@id/gul1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_sauce_perc"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="6dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:fontFamily="@font/proxim_nova_semibold" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edit_text_reg_data"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:background="@drawable/edit_text_underline"
+        android:textCursorDrawable="@drawable/edit_text_cursor"
+        android:textColor="@color/kormoTech_blue"
+        android:gravity="center"
+        android:hint="@string/reg_data"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit_text_addition_one_perc"
+        android:layout_marginTop="12dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:fontFamily="@font/proxim_nova_semibold" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/matrix_spinner"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_text_reg_data"
+        android:layout_marginTop="12dp"
+        android:entries="@array/matrix_entries"
+        android:layout_marginEnd="6dp"/>
+
+    <ImageView
+        android:id="@+id/matrix_image"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="@id/edit_text_addition_two_perc"
+        app:layout_constraintTop_toTopOf="@id/matrix_spinner"
+        app:layout_constraintBottom_toBottomOf="@id/matrix_spinner"
+        android:src="@drawable/bk_1_matrix"
+        android:layout_marginEnd="4dp"/>
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/brand_spinner"
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/matrix_spinner"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="6dp"/>
+
+    <ImageView
+        android:id="@+id/brand_image"
+        android:layout_width="60dp"
+        android:layout_height="0dp"
+        app:layout_constraintEnd_toEndOf="@id/edit_text_addition_two_perc"
+        app:layout_constraintTop_toTopOf="@id/brand_spinner"
+        app:layout_constraintBottom_toBottomOf="@id/brand_spinner"
+        android:src="@drawable/c4p_logo"
+        android:layout_marginEnd="4dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

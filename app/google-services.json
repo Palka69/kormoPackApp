@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "680680193161",
+    "project_id": "kormopack-a2d53",
+    "storage_bucket": "kormopack-a2d53.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:680680193161:android:525d09eff71cd17f8ada58",
+        "android_client_info": {
+          "package_name": "com.example.kormopack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC2U-B_brEICe7wk3O2ZxVRmqK8TC_nmvQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

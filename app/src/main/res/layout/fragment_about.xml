@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".navFragments.AboutFragment"
+    android:padding="8dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/about_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="1dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:cardCornerRadius="32dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/gul3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.34"/>
+
+            <ImageView
+                android:id="@+id/K_logo"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/blue_k_logo"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/gul3"
+                android:padding="20dp"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:id="@+id/app_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:fontFamily="@font/proxim_nova_semibold"
+                android:textSize="33sp"
+                app:layout_constraintTop_toBottomOf="@id/gul3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/kormoTech_blue"/>
+
+
+            <TextView
+                android:id="@+id/version_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_version"
+                android:fontFamily="@font/proxim_nova_semibold"
+                android:textSize="27sp"
+                app:layout_constraintTop_toBottomOf="@id/app_name_txt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/kormoTech_blue"/>
+
+            <TextView
+                android:id="@+id/about_app"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/proxim_nova_semibold"
+                android:textSize="16sp"
+                android:lineSpacingExtra="12dp"
+                android:padding="15dp"
+                android:textColor="@android:color/black"
+                android:textAlignment="viewStart"
+                android:gravity="start"
+                android:breakStrategy="balanced"
+                android:hyphenationFrequency="none"
+                app:layout_constraintTop_toBottomOf="@id/version_txt"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/about_app"
+                android:justificationMode="inter_word"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/dev_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/about_card"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:cardCornerRadius="32dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/developer_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/proxim_nova_semibold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/debeloper_txt" />
+
+            <ImageView
+                android:id="@+id/dev_inst"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_instagram"
+                app:layout_constraintTop_toBottomOf="@id/developer_txt"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/dev_ints_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/proxim_nova_semibold"
+                app:layout_constraintTop_toTopOf="@id/dev_inst"
+                app:layout_constraintBottom_toBottomOf="@id/dev_inst"
+                app:layout_constraintStart_toEndOf="@id/dev_inst"
+                android:layout_marginStart="4dp"
+                android:text="@string/instagram" />
+
+            <ImageView
+                android:id="@+id/dev_github"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_github"
+                app:layout_constraintTop_toBottomOf="@id/dev_inst"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/dev_github_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/proxim_nova_semibold"
+                app:layout_constraintTop_toTopOf="@id/dev_github"
+                app:layout_constraintBottom_toBottomOf="@id/dev_github"
+                app:layout_constraintStart_toEndOf="@id/dev_github"
+                android:layout_marginStart="4dp"
+                android:text="@string/github" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/dev_inst_txt_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/proxim_nova_semibold"
+                app:layout_constraintTop_toTopOf="@id/dev_inst"
+                app:layout_constraintBottom_toBottomOf="@id/dev_inst"
+                app:layout_constraintStart_toEndOf="@id/dev_ints_txt"
+                android:layout_marginStart="4dp"
+                android:text="@string/aezakmi_34_inst"
+                android:textColor="@color/kormoTech_blue"/>
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/dev_github_txt_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/proxim_nova_semibold"
+                app:layout_constraintTop_toTopOf="@id/dev_github"
+                app:layout_constraintBottom_toBottomOf="@id/dev_github"
+                app:layout_constraintStart_toEndOf="@id/dev_github_txt"
+                android:layout_marginStart="4dp"
+                android:text="@string/kormopackapp"
+                android:textColor="@color/kormoTech_blue"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/kormotech_card"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dev_card"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        app:cardCornerRadius="32dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/kormotech_txt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/proxim_nova_semibold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:text="@string/forr" />
+
+            <ImageView
+                android:id="@+id/kormotech_inst"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/icon_instagram"
+                app:layout_constraintTop_toBottomOf="@id/kormotech_txt"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/kormotech_ints_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/proxim_nova_semibold"
+                app:layout_constraintTop_toTopOf="@id/kormotech_inst"
+                app:layout_constraintBottom_toBottomOf="@id/kormotech_inst"
+                app:layout_constraintStart_toEndOf="@id/kormotech_inst"
+                android:layout_marginStart="4dp"
+                android:text="@string/instagram" />
+
+            <ImageView
+                android:id="@+id/kormotech_s"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/letter_k"
+                app:layout_constraintTop_toBottomOf="@id/kormotech_inst"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="4dp"/>
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/kormotech_s_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/proxim_nova_semibold"
+                app:layout_constraintTop_toTopOf="@id/kormotech_s"
+                app:layout_constraintBottom_toBottomOf="@id/kormotech_s"
+                app:layout_constraintStart_toEndOf="@id/kormotech_s"
+                android:layout_marginStart="4dp"
+                android:text="@string/site" />
+
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/kormotech_inst_txt_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/proxim_nova_semibold"
+                app:layout_constraintTop_toTopOf="@id/kormotech_inst"
+                app:layout_constraintBottom_toBottomOf="@id/kormotech_inst"
+                app:layout_constraintStart_toEndOf="@id/kormotech_ints_txt"
+                android:layout_marginStart="4dp"
+                android:text="@string/kormotech_global_inst"
+                android:textColor="@color/kormoTech_blue"/>
+            <TextView
+                android:layout_marginTop="4dp"
+                android:id="@+id/kormotech_s_txt_link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:fontFamily="@font/proxim_nova_semibold"
+                app:layout_constraintTop_toTopOf="@id/kormotech_s"
+                app:layout_constraintBottom_toBottomOf="@id/kormotech_s"
+                app:layout_constraintStart_toEndOf="@id/kormotech_s_txt"
+                android:layout_marginStart="4dp"
+                android:text="@string/kormotech"
+                android:textColor="@color/kormoTech_blue"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

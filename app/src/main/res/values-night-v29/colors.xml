@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="kormoTech_blue">#00B3E6</color>
+    <color name="kormoTech_light_orange">#FF9C34</color>
+    <color name="kormoTech_dark_orange">#FF8000</color>
+    <color name="gray_backg">#F0F0F0</color>
+    <color name="gray_stroke">#B0B0B0</color>
+</resources>

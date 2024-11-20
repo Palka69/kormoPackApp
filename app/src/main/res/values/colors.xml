@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="kormoTech_blue">#00B3E6</color>
+    <color name="kormoTech_calc_blue">#00c0f3</color>
+    <color name="kormoTech_light_orange">#FF9C34</color>
+    <color name="kormoTech_dark_orange">#FF8000</color>
+    <color name="gray_backg">#F0F0F0</color>
+    <color name="gray_stroke">#B0B0B0</color>
+    <color name="myau_red">#cf0031</color>
+    <color name="opti_green">#00594e</color>
+    <color name="smart_choice_blue">#0088d7</color>
+    <color name="sjobogarden_blue">#30277d</color>
+    <color name="matrix_color">#A16B23</color>
+    <color name="kormotech_green">#9ACA3C</color>
+    <color name="kormotech_light_blue">#00C0F3</color>
+</resources>

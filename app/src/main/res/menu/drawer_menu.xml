@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:id="@+id/firstG">
+        <item
+            android:id="@+id/nav_specs"
+            android:title="@string/kormo_specs"
+            android:icon="@drawable/icon_specs"/>
+        <item
+            android:id="@+id/nav_cabinet"
+            android:title="@string/kormo_cabinet"
+            android:icon="@drawable/icon_cabinet"/>
+        <item
+            android:id="@+id/nav_pay_calc"
+            android:title="@string/kormo_pay_calc"
+            android:icon="@drawable/icon_pay"
+            />
+        <item
+            android:id="@+id/nav_instruction"
+            android:title="@string/kormo_instruction"
+            android:icon="@drawable/icon_instruction"
+            />
+    </group>
+    <group android:id="@+id/secondG">
+        <item
+            android:id="@+id/nav_settings"
+            android:title="@string/kormo_settings"
+            android:icon="@drawable/icon_settings"/>
+        <item
+            android:id="@+id/nav_about"
+            android:title="@string/kormo_about"
+            android:icon="@drawable/icon_about"/>
+        <item
+            android:id="@+id/nav_exit"
+            android:title="@string/kormo_exit"
+            android:icon="@drawable/icon_exit"/>
+    </group>
+</menu>

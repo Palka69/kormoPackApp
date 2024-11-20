@@ -1,0 +1,26 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.KormoPack" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowSplashScreenBackground">@color/white</item>
+        <item name="android:forceDarkAllowed">false</item>
+        <item name="colorPrimary">@color/kormoTech_blue</item>
+        <item name="colorPrimaryVariant">#A6C869</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">#E11212</item>
+        <item name="colorSecondaryVariant">#8BC34A</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+    <style name="ThemeOverlay.Custom.NavigationView" parent="ThemeOverlay.Material3">
+        <!-- Customize colors, fonts, etc. here -->
+        <item name="colorPrimary">@color/kormoTech_blue</item>
+        <item name="colorPrimaryVariant">#A6C869</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">#E11212</item>
+        <item name="colorSecondaryVariant">#8BC34A</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+</resources>

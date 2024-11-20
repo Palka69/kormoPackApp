@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="@color/matrix_color" /> <!-- світло-коричневий колір --><!-- закруглені кути, якщо потрібно -->
+</shape>

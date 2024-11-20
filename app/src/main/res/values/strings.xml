@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">KormoPack</string>
+    <string name="pib">ПІБ оператора ПМ</string>
+    <string name="log">Увійти</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Навігація відкрита</string>
+    <string name="navigation_drawer_close">Навігація закрита</string>
+    <string name="kormo_specs">Специфікації</string>
+    <string name="kormo_calendar">Календар</string>
+    <string name="kormo_cabinet">Особистий кабінет</string>
+    <string name="kormo_settings">Налаштування</string>
+    <string name="kormo_about">Про застосунок</string>
+    <string name="kormo_exit">Вихід</string>
+    <string name="brand_club_4_paws">Club 4 Paws</string>
+    <string name="brand_myau">Мяу</string>
+    <string name="brand_opti_meal">OptiMeal</string>
+    <string name="brand_smart_choice">Розумний Вибір/АТБ</string>
+    <string name="brand_sjobogarden">Sjobogardens</string>
+    <string name="kormo_pay_calc">Калькулятор ЗП</string>
+    <string name="kormo_instruction">Інструкція - посібник</string>
+    <string name="add_new_brand">Додати новий бренд</string>
+    <string name="add_new_spec">Додати нову специфікацію</string>
+    <string name="enter_brand_name">Назва бренду</string>
+    <string name="spec_num">№ Специфікації</string>
+    <string name="recipe_num">№ Рецепту</string>
+    <string name="feed_name">Назва корму</string>
+    <string name="total_weight">Загальна вага</string>
+    <string name="pieces_perc">% Шматочки</string>
+    <string name="sauce_perc">% Соус/Желе</string>
+    <string name="addition_one_perc">% 1 Добавка</string>
+    <string name="addition_two_perc">% 2 Добавка</string>
+    <string name="reg_data">Реєстраційні дані</string>
+    <string name="enter_spec_name">Назва/номер специфікації</string>
+    <string name="app_version">v1.0</string>
+
+    <string name="about_app">
+        Застосунок створений для освітніх цілей і покращення зручності роботи операторів ПМ.\n
+        За допомогою цього асистента можна швидко знайти потрібну специфікацію (або додати її при потребі у розділі "Налаштування"), а також звірити свої зміни, зарплатню і отримати швидкі підказки щодо експлуатації ПМ у розділі "Інструкція".
+</string>
+    <string name="debeloper_txt">Розробник:</string>
+    <string name="instagram">Instagram:</string>
+    <string name="github">GitHub:</string>
+    <string name="aezakmi_34_inst">aezakmi___34</string>
+    <string name="forr">Для:</string>
+    <string name="site">Сайт:</string>
+    <string name="kormotech_global_inst">kormotech.global</string>
+    <string name="kormopackapp">kormoPackApp</string>
+    <string name="kormotech">KormoTech</string>
+    <string name="_09_08_2024_last_update_date">09/08/2024</string>
+    <string name="bonus">Бонус:</string>
+    <string name="bonus_perc">15%</string>
+
+
+    <string-array name="matrix_entries">
+        <item>BK-1</item>
+        <item>BK-2</item>
+        <item>BK-3</item>
+    </string-array>
+</resources>
